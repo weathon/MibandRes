@@ -12,6 +12,8 @@ b=int(b)
 for i in files:
     try:
         im = Image.open(mypath+"/"+i)
+        if not (i.endswith(".png")):
+            5/0
         print("正在处理 "+i)
         img = im.load()
         # img.flags.writeable = True
